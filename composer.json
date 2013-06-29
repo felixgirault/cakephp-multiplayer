@@ -11,6 +11,7 @@
 	}],
 	"keywords": [
 		"video",
+		"player",
 		"embed",
 		"html",
 		"media"
@@ -18,7 +19,14 @@
 	"licence": "MIT",
 	"homepage": "http://github.com/felixgirault/cakephp-multiplayer",
 	"require": {
+		"fg/multiplayer": "dev-master",
 		"composer/installers": "~1.0",
 		"php": ">=5.3.0"
+	},
+	"config": {
+		"vendor-dir": "Vendor"
+	},
+	"extra": {
+		"installer-name": "Multiplayer"
 	}
 }
