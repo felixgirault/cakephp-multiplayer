@@ -1,5 +1,9 @@
 <?php
 
+use fg\Multiplayer\Multiplayer;
+
+
+
 /**
  *	A simple proxy to configure and use Multiplayer.
  *
@@ -11,7 +15,9 @@
 class MultiplayerHelper extends AppHelper {
 
 	/**
+	 *	Custom options for Multiplayer.
 	 *
+	 *	@var array
 	 */
 
 	public $options = array( );
@@ -19,7 +25,7 @@ class MultiplayerHelper extends AppHelper {
 
 
 	/**
-	 *
+	 *	Multiplayer instance.
 	 *
 	 *	@var fg\Multiplayer\Multiplayer
 	 */
@@ -29,20 +35,23 @@ class MultiplayerHelper extends AppHelper {
 
 
 	/**
+	 *	Constructor.
 	 *
+	 *	@param View $View View using the helper.
+	 *	@param array $settings Helper settings.
 	 */
 
 	public function __construct( View $View, array $settings = array( )) {
 
 		parent::__construct( $View, $settings );
 
-		$this->_Multiplayer = new fg\Multiplayer\Multiplayer( $this->options );
+		$this->_Multiplayer = new Multiplayer( $this->options );
 	}
 
 
 
 	/**
-	 *
+	 *	@see fg\Multiplayer\Multiplayer::html( )
 	 */
 
 	public function html( $source, $options ) {
