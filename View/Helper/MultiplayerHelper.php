@@ -1,6 +1,6 @@
 <?php
 
-use fg\Multiplayer\Multiplayer;
+use Multiplayer\Multiplayer;
 
 
 
