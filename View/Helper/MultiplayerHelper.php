@@ -20,7 +20,7 @@ class MultiplayerHelper extends AppHelper {
 	 *	@var array
 	 */
 
-	public $options = array( );
+	public $options = [ ];
 
 
 
@@ -41,7 +41,7 @@ class MultiplayerHelper extends AppHelper {
 	 *	@param array $settings Helper settings.
 	 */
 
-	public function __construct( View $View, array $settings = array( )) {
+	public function __construct( View $View, array $settings = [ ]) {
 
 		parent::__construct( $View, $settings );
 
